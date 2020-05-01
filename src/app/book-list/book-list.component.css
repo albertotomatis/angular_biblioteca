@@ -1,0 +1,65 @@
+/* tipografia */
+
+h1 {
+    color: #1d3557;
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titolo {
+    color: #1d3557;
+    font-size: 20px;
+}
+
+.autore {
+    font-style: italic;
+    color: #457b9d;
+    font-size: 18px;
+}
+
+data {
+    font-size: 15px;
+    color: #1d3557;
+}
+
+ul li {
+    list-style-type: none;
+    font-family: sans-serif;
+    padding-top: 5px;
+}
+
+/* contenitori */
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    height: 140px;;
+    border: 1px solid #eae3e3;
+    padding-right: 25px;
+    background-color: #e4e2e2;
+} 
+
+img{
+    height: 100%; 
+}
+
+.bottone {
+    background-color: #1d3557;
+    border: none;
+    color: #e4e2e2;
+    height: 23px;
+    margin-top: 10px;
+    justify-content: center;
+}

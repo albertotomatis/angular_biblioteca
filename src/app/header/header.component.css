@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    background-color: #b4b4b4;
+}
+
+img {
+    height: 110px;
+}

@@ -1,0 +1,11 @@
+<div *ngIf="service.selectedBook">
+    <h2>{{title}}</h2>
+    <div>
+        <input type="text" name="ISBN" placeholder="ISBN" [(ngModel)]="service.selectedBook.ISBN">
+        <input type="text" name="title" placeholder="title" [(ngModel)]="service.selectedBook.title">
+        <input type="text" name="author" placeholder="author" [(ngModel)]="service.selectedBook.author">
+        <input type="text" name="publisher" placeholder="publisher" [(ngModel)]="service.selectedBook.publisher">
+        <input type="date" name="publicationDate" placeholder="publicationData" [(ngModel)]="service.selectedBook.publicationDate">
+        <input type="button" value="Save" (click)="save()">
+    </div>
+</div>

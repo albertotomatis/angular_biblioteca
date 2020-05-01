@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+<div class="aggiungere">
+    <div><input type="text" placeholder="ISBN" [(ngModel)]="newBook.ISBN" name="ISBN"></div>
+    <div><input type="text" placeholder="Titolo" [(ngModel)]="newBook.title" name="title"></div>
+    <div><input type="text" placeholder="Autore" [(ngModel)]="newBook.author" name="author"></div>
+    <div><input type="text" placeholder="Casa editrice" [(ngModel)]="newBook.publisher" name="publisher"></div>
+    <div><input type="date" [(ngModel)]="newBook.publicationDate" name="publicationDate"></div>
+    <div><input type="submit" value="Aggiungi" class="bottone" (click)="add()"></div>
+</div>

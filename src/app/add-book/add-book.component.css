@@ -1,0 +1,27 @@
+h2 {
+    text-align: center;
+    color: #1d3557;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.aggiungere {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+div {
+    margin-left: 15px;
+}
+
+.bottone {
+    background-color: #1d3557;
+    border: none;
+    color: #e4e2e2;
+    height: 23px;
+
+
+}

@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<div class="lista"> 
+    <div *ngFor="let book of books">
+    <div class="box">
+        <img [src]="book.coverUrl">
+        <ul>
+            <li class="titolo">{{book.title}}</li>
+            <li class="autore">{{book.author}}</li>
+            <li class="data">Data pubblicazione: {{book.publicationDate | date:'dd/MM/yyyy'}}</li>
+            <input type="button" value="modifica" class="bottone" (click)="editBook(book)">
+        </ul>
+    </div>
+</div>  
+</div>
