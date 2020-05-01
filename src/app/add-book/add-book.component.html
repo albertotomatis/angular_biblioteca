@@ -5,5 +5,6 @@
     <div><input type="text" placeholder="Autore" [(ngModel)]="newBook.author" name="author"></div>
     <div><input type="text" placeholder="Casa editrice" [(ngModel)]="newBook.publisher" name="publisher"></div>
     <div><input type="date" [(ngModel)]="newBook.publicationDate" name="publicationDate"></div>
+    <div><input type="coverUrl" placeholder="Url cover book" [(ngModel)]="newBook.coverUrl" name="coverUrl"></div>
     <div><input type="submit" value="Aggiungi" class="bottone" (click)="add()"></div>
 </div>

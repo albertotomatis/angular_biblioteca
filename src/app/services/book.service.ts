@@ -38,9 +38,9 @@ let books: Book[] = [{
   ISBN: "9788811810742",
   title: "Il piccolo principe",
   author: "Antoine de Saint-Exupéry",
-  publisher: "Garzanti",
+  publisher: "Bur",
   publicationDate: new Date('2019/09/10'),
-  coverUrl: 'assets/images/cover/il-piccolo-principe.jpeg'
+  coverUrl: 'assets/images/coverBook/il-piccolo-principe.jpeg'
 }]
 
 @Injectable({

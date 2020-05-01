@@ -10,11 +10,12 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5px;
 }
 
 div {
     margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bottone {
