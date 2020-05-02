@@ -6,6 +6,6 @@
         <input type="text" name="author" placeholder="author" [(ngModel)]="service.selectedBook.author">
         <input type="text" name="publisher" placeholder="publisher" [(ngModel)]="service.selectedBook.publisher">
         <input type="date" name="publicationDate" placeholder="publicationData" [(ngModel)]="service.selectedBook.publicationDate">
-        <input type="button" value="Modifica" class="bottone" (click)="save()">
+        <button (click)="save()">Modifica</button>
     </div>
 </div>

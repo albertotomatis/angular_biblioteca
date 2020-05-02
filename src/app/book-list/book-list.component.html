@@ -3,12 +3,14 @@
     <div *ngFor="let book of books">
     <div class="box">
         <img [src]="book.coverUrl">
-        <ul>
-            <li class="titolo">{{book.title}}</li>
-            <li class="autore">{{book.author}}</li>
-            <li class="data">Data pubblicazione: {{book.publicationDate | date:'dd/MM/yyyy'}}</li>
-            <input type="button" value="modifica" class="bottone" (click)="editBook(book)">
-        </ul>
+        <span> 
+            <div class="ordinata">
+                <div class="titolo">{{book.title}}</div>
+                <div class="autore">{{book.author}}</div>
+                <div class="data">Data pubblicazione: {{book.publicationDate | date:'dd/MM/yyyy'}}</div>
+                <button (click)="editBook(book)">Modifica</button>
+            </div>
+        </span>
     </div>
-</div>  
+    </div>  
 </div>
