@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Book } from '../models/Book';
+import { Component, OnInit } from '@angular/core';
+import { Book } from '../models/book';
 import { BookService } from '../services/book.service';
+
 
 @Component({
   selector: 'app-add-book',
@@ -9,7 +10,7 @@ import { BookService } from '../services/book.service';
 })
 export class AddBookComponent implements OnInit {
 
-  title = "Aggiungi libro";
+  title = "Aggiungi un libro";
 
   newBook: Book;
 
@@ -22,21 +23,21 @@ export class AddBookComponent implements OnInit {
       author: "",
       publisher: "",
       publicationDate: new Date(),
-      coverUrl: ""
+      coverUrl: 'assets/images/cover.png'
 
     }
   };
 
   add() {
-    this.bookService.addBook(this.newBook),
-    /* ripulisce campi dopo il submit */
+    this.bookService.addBook(this.newBook);
     this.newBook = {
       ISBN: "",
       title: "",
       author: "",
       publisher: "",
       publicationDate: new Date(),
-      coverUrl: ''
+      coverUrl: 'assets/images/cover.png'
+    }
   }
-  }
+
 }
